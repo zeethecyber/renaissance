@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    body {
+        font-family: "Inter Tight", sans-serif;
+        color: theme('colors.dark1')
+    }
+
+    @font-face {
+        src: url('./lib/fonts/victor-serif.woff2') format('woff2-variations');
+        font-family:'Victor Serif';
+        font-style: normal;
+    }
+
+}
+
+@layer utilities {
+    .container-custom {
+        max-width: 1728px;
+        padding-left: 144px;
+        padding-right: 144px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        .container-custom {
+            padding-left: 64px;
+            padding-right: 64px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .container-custom {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+    }
+}
