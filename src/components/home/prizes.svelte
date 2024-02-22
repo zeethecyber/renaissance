@@ -7,11 +7,11 @@
 </script>
 
 <section
-  class="py-40 relative bg-cover"
-  style="background: linear-gradient(180deg, #FEFCF9 0%, rgba(254, 252, 249, 0.00) 51%, #FEFCF9 100%), url({PrizesClouds}), lightgray 50% / cover no-repeat;"
+  class="py-40 relative bg-cover sm:mt-0 mt-40 md:mt-96 pt-96 sm:pt-0"
+  style="background: linear-gradient(180deg, #FEFCF9 0%, rgba(254, 252, 249, 0.00) 51%, #FEFCF9 100%), url({PrizesClouds}), lightgray 50% / cover no-repeat; "
 >
   <div class="container-custom mx-auto">
-    <div class="relative">
+    <div class="relative hidden sm:block">
       <div class="absolute top-0 left-0 w-full">
         <h2 class="text-[136px] italic relative leading-none font-instrument">
           <span class="bg-primary">Prizes</span>
@@ -84,6 +84,70 @@
           </div>
         </div>
         <div></div>
+      </div>
+    </div>
+
+    <!-- this div is for small screens -->
+    <div class="block sm:hidden">
+      <div class="">
+        <h2 class="text-7xl italic relative leading-none font-instrument">
+          <span class="bg-primary">Prizes</span>
+        </h2>
+      </div>
+      <div>
+        <div class="flex flex-col gap-6 mt-8">
+          <div>
+            <img src={PrizesCenter} alt="" />
+          </div>
+          <div class="relative flex items-center justify-center">
+            <img src={PrizeQuadrant} alt="" class="rotate-90" />
+            <div class="absolute">
+              <p class="font-instrument mb-4 italic font-semibold">USDC-SPL</p>
+              <h3 class="text-7xl text-white font-semibold bg-dark1">$50K</h3>
+              <p
+                class="font-instrument bg-primary italic text-2xl w-min whitespace-nowrap"
+              >
+                Grand Champion
+              </p>
+            </div>
+          </div>
+          <div class="relative flex items-center justify-center">
+            <img src={PrizeQuadrant} alt="" class="rotate-90" />
+            <div class="absolute">
+              <p class="font-instrument mb-4 italic font-semibold">USDC-SPL</p>
+              <h3 class="text-7xl text-white font-semibold bg-dark1">$10K</h3>
+              <p
+                class="font-instrument bg-primary italic text-2xl w-min whitespace-nowrap"
+              >
+                Public Goods Award
+              </p>
+            </div>
+          </div>
+          <div class="relative flex items-center justify-center">
+            <img src={PrizeQuadrant} alt="" class="rotate-90" />
+            <div class="absolute">
+              <p class="font-instrument mb-4 italic font-semibold">USDC-SPL</p>
+              <h3 class="text-7xl text-white font-semibold bg-dark1">$5K</h3>
+              <p
+                class="font-instrument bg-primary italic text-2xl w-min whitespace-nowrap"
+              >
+                Climate Award
+              </p>
+            </div>
+          </div>
+          <div class="relative flex items-center justify-center">
+            <img src={PrizeQuadrant} alt="" class="rotate-90" />
+            <div class="absolute">
+              <p class="font-instrument mb-4 italic font-semibold">USDC-SPL</p>
+              <h3 class="text-7xl text-white font-semibold bg-dark1">$10K</h3>
+              <p
+                class="font-instrument bg-primary italic text-2xl w-min whitespace-nowrap"
+              >
+                University Award
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

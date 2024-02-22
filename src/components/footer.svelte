@@ -6,13 +6,15 @@
 <footer class="relative">
   <div class="container-custom mx-auto">
     <div class="flex justify-center mb-10">
-      <h2 class="text-2xl italic font-medium bg-primary font-instrument">
+      <h2
+        class="text-center md:text-left text-2xl italic font-medium bg-primary font-instrument"
+      >
         Solana Foundation Hackathon Official Rules
       </h2>
     </div>
     <div
-      class="max-w-[34vw] mx-auto mb-28
-    max-w-[34vw] mx-auto mb-28"
+      class=" sm:max-w-[34vw] max-w-auto mx-8 sm:mx-auto mb-28
+    "
     >
       <p class="text-center text-dark2 text-sm leading-relaxed">
         The Solana Renaissance Hackathon is a competition where projects will be
@@ -42,31 +44,54 @@
         in violation of the Commodities and Exchange Act.
       </p>
     </div>
-    <div class="flex justify-center pb-20">
-      <ul class="flex items-center font-medium">
+    <div class="flex justify-center pb-20 relative">
+      <ul
+        class="flex items-center left-0 right-0 justify-between md:justify-center font-medium z-10 absolute"
+      >
         <li>
-          <a class="py-2 w-[112px] inline-block" href="https://"> Resources </a>
+          <a
+            class="py-2 md:w-[112px] inline-block text-sm md:text-base"
+            href="https://"
+          >
+            Resources
+          </a>
         </li>
         <li>
-          <a class="py-2 w-[112px] inline-block" href="https://">
+          <a
+            class="py-2 md:w-[112px] inline-block text-sm md:text-base"
+            href="https://"
+          >
+            FAQs
+          </a>
+        </li>
+        <li>
+          <a
+            class="py-2 md:w-[112px] inline-block text-sm md:text-base"
+            href="https://"
+          >
+            <img src={Logo} alt="" class="w-4 md:w-auto" />
+          </a>
+        </li>
+        <li>
+          <a
+            class="py-2 md:w-[112px] inline-block text-sm md:text-base"
+            href="https://"
+          >
             Accelerator
           </a>
         </li>
         <li>
-          <a class="py-2 w-[112px] inline-block" href="https://">
-            <img src={Logo} alt="" />
+          <a
+            class="py-2 md:w-[112px] inline-block text-sm md:text-base"
+            href="https://"
+          >
+            Register
           </a>
-        </li>
-        <li>
-          <a class="py-2 w-[112px] inline-block" href="https://"> FAQs </a>
-        </li>
-        <li>
-          <a class="py-2 w-[112px] inline-block" href="https://"> Register </a>
         </li>
       </ul>
     </div>
   </div>
-  <div class="absolute bottom-0">
+  <div class="absolute bottom-0 hidden sm:block">
     <img src={FooterBg} alt="" class="w-full" />
   </div>
 </footer>

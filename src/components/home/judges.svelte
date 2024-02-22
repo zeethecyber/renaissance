@@ -2,6 +2,27 @@
   import Judge from "$lib/images/judge.png";
   import JudgeClouds from "$lib/images/judges-clouds.png";
   import Cracks from "$lib/images/cracks.png";
+
+  import { onMount, onDestroy } from "svelte";
+  let showMore = false;
+  let isMobile = false;
+
+  function checkIsMobile() {
+    isMobile = window.innerWidth < 768;
+  }
+
+  onMount(() => {
+    checkIsMobile();
+    window.addEventListener("resize", checkIsMobile);
+    return () => {
+      window.removeEventListener("resize", checkIsMobile);
+    };
+  });
+
+  function toggleShowMore() {
+    showMore = !showMore;
+    isMobile = !isMobile;
+  }
 </script>
 
 <section
@@ -11,25 +32,35 @@
   <div class="container-custom mx-auto relative z-10">
     <div class="flex mb-20">
       <h2
-        class="text-[136px] italic text-center bg-primary relative leading-none font-instrument"
+        class="text-7xl lg:text-[136px] italic text-center bg-primary relative leading-none font-instrument"
       >
         Judges
       </h2>
     </div>
-    <div class="grid grid-cols-5 border-r border-b">
-      {#each Array(15) as _, index}
-        <div class="border-t border-l py-8 px-12">
+    <div
+      class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 border-r border-b"
+    >
+      {#each Array(Math.min(!isMobile ? 15 : 8, 15)) as _, index}
+        <div class="border-t border-l xl:py-8 xl:px-12 p-4">
           <div>
             <img src={Judge} alt="" />
             <div>
-              <h3 class="font-medium text-lg font-instrument">
+              <h3 class="font-medium xl:text-lg font-instrument">
                 Anatoly Yakovenko
               </h3>
-              <p class="font-sm font-semibold">Co-founder, Solana Labs</p>
+              <p class="text-sm font-semibold">Co-founder, Solana Labs</p>
             </div>
           </div>
         </div>
       {/each}
+    </div>
+    <div
+      class="border bg-[#F6F6F6] mt-10 md:hidden"
+      style="top: calc(100% + 8px)"
+    >
+      <div class="border m-[2px] bg-white font-medium flex flex-col">
+        <button class="py-3 w-full text-center">Load More</button>
+      </div>
     </div>
   </div>
   <img

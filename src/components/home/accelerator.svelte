@@ -13,13 +13,13 @@
       <div class="2xl:col-span-2">
         <div class="flex">
           <p
-            class="text-2xl text-dark2 font-medium mb-10 after:content-[''] after:w-24 after:h-[1px] relative after:absolute after:left-[120%] flex items-center after:bg-[#BDBDBD]"
+            class="text-[20px] md:text-2xl text-dark2 font-medium mb-10 after:content-[''] after:w-16 md:after:w-24 after:h-[1px] relative after:absolute after:left-[120%] flex items-center after:bg-[#BDBDBD]"
           >
             Now introducing
           </p>
         </div>
         <h2
-          class="text-7xl lg:text-8xl 2xl:text-[136px] italic relative leading-none font-instrument"
+          class="text-6xl lg:text-8xl 2xl:text-[136px] italic relative leading-none font-instrument"
         >
           <span class="bg-primary">Colosseum's</span><br /><span
             class="bg-primary">Accelerator</span
@@ -27,7 +27,7 @@
         </h2>
       </div>
       <div class="flex items-end">
-        <p class="font-medium text-2xl text-dark2 mt-12">
+        <p class="font-medium text-[20px] md:text-2xl text-dark2 mt-12">
           All hackathon winners will be interviewed and considered for
           Colosseum's accelerator program. Accepted teams will receive:
         </p>
@@ -37,7 +37,7 @@
       class="grid justify-center xl:justify-start xl:grid-cols-3 h-[1000px] mt-28 gap-x-20 gap-y-28"
     >
       <div>
-        <div class="flex flex-col items-center xl:items-start">
+        <div class="flex flex-col md:items-center xl:items-start">
           <div class="relative">
             <img src={PreSeed} alt="" />
             <div
@@ -46,16 +46,16 @@
               I
             </div>
           </div>
-          <h3 class="text-7xl font-semibold mt-10">$250,000</h3>
+          <h3 class="text-4xl md:text-7xl font-semibold mt-10">$250,000</h3>
           <h5
-            class="text-2xl font-medium mt-2 text-dark2 text-center xl:text-left"
+            class="text-xl md:text-2xl font-medium mt-2 text-dark2 xl:text-left"
           >
             in pre-seed funding
           </h5>
         </div>
       </div>
       <div class="flex items-center">
-        <div class="flex flex-col items-center xl:items-start">
+        <div class="flex flex-col md:items-center xl:items-start">
           <div class="relative">
             <img src={Network} alt="" />
             <div
@@ -64,16 +64,16 @@
               II
             </div>
           </div>
-          <h3 class="text-7xl font-semibold mt-10">Network</h3>
+          <h3 class="text-4xl md:text-7xl font-semibold mt-10">Network</h3>
           <h5
-            class="text-2xl font-medium mt-2 text-dark2 text-center xl:text-left"
+            class="text-xl md:text-2xl font-medium mt-2 text-dark2 xl:text-left"
           >
             Exclusive access to an elite founder network
           </h5>
         </div>
       </div>
       <div class="flex items-end">
-        <div class="flex flex-col items-center xl:items-start">
+        <div class="flex flex-col md:items-center xl:items-start">
           <div class="relative">
             <img src={Mentorship} alt="" />
             <div
@@ -82,9 +82,9 @@
               III
             </div>
           </div>
-          <h3 class="text-7xl font-semibold mt-10">Mentorship</h3>
+          <h3 class="text-4xl md:text-7xl font-semibold mt-10">Mentorship</h3>
           <h5
-            class="text-2xl font-medium mt-2 text-dark2 text-center xl:text-left"
+            class="text-xl md:text-2xl font-medium mt-2 text-dark2 xl:text-left"
           >
             Direct ecosystem connections and 1:1 mentorship.
           </h5>

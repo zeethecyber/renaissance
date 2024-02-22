@@ -5,8 +5,10 @@
 
 <div class="border border bg-[#F6F6F6] p-[2px]">
   <div
-    class={"border flex items-center gap-2 text-[20px] justify-center py-[14px] px-[24px] whitespace-nowrap font-medium" +
-      (active ? " bg-dark1 text-white" : "bg-white")}
+    class={"border flex items-center gap-2 text-[20px] justify-center py-[14px] px-[24px] whitespace-nowrap font-medium duration-300" +
+      (active
+        ? " bg-dark1 text-white"
+        : " bg-white hover:bg-dark1 hover:text-white")}
   >
     <svg
       viewBox="0 0 46 24"

@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { slide } from "svelte/transition";
+
   // Components
   import TrackTabBtn from "../ui/track-tab-btn.svelte";
 
@@ -12,22 +14,9 @@
   import GamingTrack from "$lib/images/gaming-track.png";
   import ConsumerTrack from "$lib/images/consumer-track.png";
   import InfrastructureTrack from "$lib/images/infrastructure-track.png";
+  import Accordion from "../ui/accordion.svelte";
 
-  const trackTabs = [
-    "DePin",
-    "DeFi & Payments",
-    "DAOs & Communities",
-    "Consumer Apps",
-    "Gaming",
-    "Infrastructure",
-  ];
-  let activeTab = "DePin";
   let activeImage = DePinTrack;
-
-  function changeActiveTab(tab: string) {
-    activeTab = tab;
-    renderImages(tab);
-  }
 
   function renderImages(tab: string) {
     switch (tab) {
@@ -51,49 +40,53 @@
         break;
     }
   }
+
+  let show: number | null = 0;
+  const items = [
+    "DePin",
+    "DeFi & Payments",
+    "DAOs & Communities",
+    "Consumer Apps",
+    "Gaming",
+    "Infrastructure",
+  ];
+
+  const showCollapse = (i: number) => {
+    i === show ? (show = null) : (show = i);
+    renderImages(items[i]);
+  };
 </script>
 
 <section class="py-24">
   <div class="container-custom mx-auto">
     <div class="relative">
-      <div class="flex mb-20 gap-10 relative z-10">
+      <div class="flex gap-10 relative z-10">
         <h2
           class="text-7xl md:text-[136px] italic text-center bg-primary relative leading-none font-instrument"
         >
           Tracks
         </h2>
-        <div class="flex gap-6 flex-wrap max-w-3xl">
-          {#each trackTabs as tab}
-            <button on:click={() => changeActiveTab(tab)}>
-              <TrackTabBtn title={tab} active={tab === activeTab} />
-            </button>
-          {/each}
-        </div>
       </div>
-      <div class="grid grid-cols-12 gap-4">
-        <div
-          class="col-span-12 sm:col-span-3 flex flex-col justify-between p-10"
-        >
-          <div>
-            <h2 class="text-6xl font-semibold">{activeTab}</h2>
-            <p class="font-medium font-2xl mt-6">
+      {#each items as item, i}
+        <Accordion index={i} {item} {show} {showCollapse}>
+          <div class="mt-10">
+            <h2 class="text-6xl font-semibold">
+              {show !== null && show >= 0 && items[show]}
+            </h2>
+            <p class="font-medium text-2xl mt-6">
               Design crypto incentivizes to build physical infrastructure
               networks to disrupt traditional incumbents.
             </p>
           </div>
           <div>
-            <p>Presented by</p>
+            <p class="text-lg mt-6">Presented by</p>
             <img src={SolanaLogo} alt="" srcset="" />
           </div>
-        </div>
-        <div class="col-span-12 sm:col-span-6 flex justify-center items-center">
-          <div class="relative flex items-center justify-center">
+          <div class="relative flex items-center justify-center mt-10">
             <img src={TracksContainer} alt="" />
             <img src={activeImage} alt="" class="absolute" />
           </div>
-        </div>
-        <div class="col-span-12 sm:col-span-3 flex items-end p-10">
-          <ul class="w-full flex flex-col gap-6">
+          <ul class="w-full flex flex-col gap-6 mt-10">
             <li class="flex items-center justify-between">
               <div class="font-instrument flex gap-4 items-center">
                 <span
@@ -145,15 +138,19 @@
               <div class="font-semibold text-2xl">$5,000</div>
             </li>
           </ul>
-        </div>
-      </div>
+        </Accordion>
+      {/each}
 
       <img
         src={TrackLeft}
         alt=""
         class="hidden md:block absolute bottom-0 left-0"
       />
-      <img src={TrackRight} alt="" class="absolute top-0 right-0" />
+      <img
+        src={TrackRight}
+        alt=""
+        class="hidden md:block absolute top-0 right-0"
+      />
     </div>
   </div>
 </section>
