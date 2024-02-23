@@ -8,6 +8,9 @@ export default {
         dark1: "#191817",
         dark2: "#312923",
       },
+      fontSize: {
+        "heading-large": "135px",
+      },
       fontFamily: {
         inter: ["Inter Tight", "sans-serif"],
         instrument: ["Instrument Serif", "sans-serif"],

@@ -50,40 +50,40 @@
       >
         <li>
           <a
-            class="py-2 md:w-[112px] inline-block text-sm md:text-base"
-            href="https://"
+            class="py-2 md:w-[112px] inline-block text-sm md:text-base hover:opacity-75 duration-300"
+            href="#"
           >
             Resources
           </a>
         </li>
         <li>
           <a
-            class="py-2 md:w-[112px] inline-block text-sm md:text-base"
-            href="https://"
+            class="py-2 md:w-[112px] inline-block text-sm md:text-base hover:opacity-75 duration-300"
+            href="#"
           >
             FAQs
           </a>
         </li>
         <li>
           <a
-            class="py-2 md:w-[112px] inline-block text-sm md:text-base"
-            href="https://"
+            class="py-2 md:w-[112px] inline-block text-sm md:text-base hover:opacity-75 duration-300"
+            href="#"
           >
             <img src={Logo} alt="" class="w-4 md:w-auto" />
           </a>
         </li>
         <li>
           <a
-            class="py-2 md:w-[112px] inline-block text-sm md:text-base"
-            href="https://"
+            class="py-2 md:w-[112px] inline-block text-sm md:text-base hover:opacity-75 duration-300"
+            href="#"
           >
             Accelerator
           </a>
         </li>
         <li>
           <a
-            class="py-2 md:w-[112px] inline-block text-sm md:text-base"
-            href="https://"
+            class="py-2 md:w-[112px] inline-block text-sm md:text-base hover:opacity-75 duration-300"
+            href="#"
           >
             Register
           </a>

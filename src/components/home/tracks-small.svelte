@@ -1,9 +1,4 @@
 <script lang="ts">
-  import { slide } from "svelte/transition";
-
-  // Components
-  import TrackTabBtn from "../ui/track-tab-btn.svelte";
-
   // Images
   import SolanaLogo from "$lib/svg/solana-logo.svg";
   import TracksContainer from "$lib/images/tracks-container.png";
@@ -23,10 +18,10 @@
       case "DePin":
         activeImage = DePinTrack;
         break;
-      case "DeFi & Payments":
+      case "DeFi":
         activeImage = DeFiTrack;
         break;
-      case "DAOs & Communities":
+      case "Payments":
         activeImage = DePinTrack;
         break;
       case "Consumer Apps":
@@ -44,8 +39,8 @@
   let show: number | null = 0;
   const items = [
     "DePin",
-    "DeFi & Payments",
-    "DAOs & Communities",
+    "DeFi",
+    "Payments",
     "Consumer Apps",
     "Gaming",
     "Infrastructure",
@@ -62,7 +57,7 @@
     <div class="relative">
       <div class="flex gap-10 relative z-10">
         <h2
-          class="text-7xl md:text-[136px] italic text-center bg-primary relative leading-none font-instrument"
+          class="text-6xl lg:text-8xl 2xl:text-heading-large italic text-center bg-primary relative leading-none font-instrument"
         >
           Tracks
         </h2>

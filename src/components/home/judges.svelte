@@ -3,8 +3,7 @@
   import JudgeClouds from "$lib/images/judges-clouds.png";
   import Cracks from "$lib/images/cracks.png";
 
-  import { onMount, onDestroy } from "svelte";
-  let showMore = false;
+  import { onMount } from "svelte";
   let isMobile = false;
 
   function checkIsMobile() {
@@ -18,11 +17,6 @@
       window.removeEventListener("resize", checkIsMobile);
     };
   });
-
-  function toggleShowMore() {
-    showMore = !showMore;
-    isMobile = !isMobile;
-  }
 </script>
 
 <section
@@ -32,7 +26,7 @@
   <div class="container-custom mx-auto relative z-10">
     <div class="flex mb-20">
       <h2
-        class="text-7xl lg:text-[136px] italic text-center bg-primary relative leading-none font-instrument"
+        class="text-6xl lg:text-8xl 2xl:text-heading-large italic text-center bg-primary relative leading-none font-instrument"
       >
         Judges
       </h2>
@@ -41,11 +35,13 @@
       class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 border-r border-b"
     >
       {#each Array(Math.min(!isMobile ? 15 : 8, 15)) as _, index}
-        <div class="border-t border-l xl:py-8 xl:px-12 p-4">
+        <div class="border-t border-l xl:py-8 xl:px-12 p-4 group">
           <div>
-            <img src={Judge} alt="" />
+            <img src={Judge} alt="" class="group-hover:mix-blend-darken" />
             <div>
-              <h3 class="font-medium xl:text-lg font-instrument">
+              <h3
+                class="font-medium xl:text-lg font-instrument group-hover:bg-primary duration-300"
+              >
                 Anatoly Yakovenko
               </h3>
               <p class="text-sm font-semibold">Co-founder, Solana Labs</p>

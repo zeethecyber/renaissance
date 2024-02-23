@@ -12,10 +12,8 @@
       <div
         class="flex items-center border m-[2px] bg-white font-medium gap-1 relative"
       >
-        <a href="http://" class="py-3 w-[134px] text-center">Resources</a>
-        <a href="http://" class="py-3 w-[134px] text-center mr-20"
-          >Accelerator</a
-        >
+        <a href="#" class="py-3 w-[134px] text-center">Resources</a>
+        <a href="#" class="py-3 w-[134px] text-center mr-20">Accelerator</a>
         <div
           class="border bg-white flex h-20 w-20 absolute left-1/2 -translate-x-1/2"
         >
@@ -23,9 +21,9 @@
             <img src={Logo} alt="" srcset="" />
           </div>
         </div>
-        <a href="http://" class="py-3 w-[134px] text-center">FAQs</a>
+        <a href="#" class="py-3 w-[134px] text-center">FAQs</a>
         <a
-          href="http://"
+          href="#"
           class="py-3 w-[134px] text-center bg-primary italic font-normal hover:bg-dark1 hover:text-white duration-500"
           >Register Now</a
         >
@@ -69,7 +67,7 @@
           </div>
         </div>
         <a
-          href="http://"
+          href="#"
           class="py-3 w-[110px] text-center bg-primary italic font-normal font-instrument"
           >Register</a
         >
@@ -83,9 +81,9 @@
         style="top: calc(100% + 8px)"
       >
         <div class="border m-[2px] bg-white font-medium flex flex-col">
-          <a href="http://" class="py-3 w-full text-center">Resources</a>
-          <a href="http://" class="py-3 w-full text-center">Accelerator</a>
-          <a href="http://" class="py-3 w-full text-center">FAQs</a>
+          <a href="#" class="py-3 w-full text-center">Resources</a>
+          <a href="#" class="py-3 w-full text-center">Accelerator</a>
+          <a href="#" class="py-3 w-full text-center">FAQs</a>
         </div>
       </div>
     {/if}

@@ -15,8 +15,8 @@
 
   const trackTabs = [
     "DePin",
-    "DeFi & Payments",
-    "DAOs & Communities",
+    "DeFi",
+    "Payments",
     "Consumer Apps",
     "Gaming",
     "Infrastructure",
@@ -34,10 +34,10 @@
       case "DePin":
         activeImage = DePinTrack;
         break;
-      case "DeFi & Payments":
+      case "DeFi":
         activeImage = DeFiTrack;
         break;
-      case "DAOs & Communities":
+      case "Payments":
         activeImage = DePinTrack;
         break;
       case "Consumer Apps":
@@ -58,7 +58,7 @@
     <div class="relative">
       <div class="flex mb-20 gap-10 relative z-10">
         <h2
-          class="text-7xl md:text-[136px] italic text-center bg-primary relative leading-none font-instrument"
+          class="text-6xl lg:text-8xl 2xl:text-heading-large italic text-center bg-primary relative leading-none font-instrument"
         >
           Tracks
         </h2>
@@ -72,11 +72,11 @@
       </div>
       <div class="grid grid-cols-12 gap-4">
         <div
-          class="col-span-12 sm:col-span-3 flex flex-col justify-between p-10"
+          class="col-span-12 sm:col-span-3 flex flex-col justify-between py-10 pl-10"
         >
           <div>
             <h2 class="text-6xl font-semibold">{activeTab}</h2>
-            <p class="font-medium font-2xl mt-6">
+            <p class="font-medium text-2xl mt-6">
               Design crypto incentivizes to build physical infrastructure
               networks to disrupt traditional incumbents.
             </p>
@@ -88,11 +88,13 @@
         </div>
         <div class="col-span-12 sm:col-span-6 flex justify-center items-center">
           <div class="relative flex items-center justify-center">
-            <img src={TracksContainer} alt="" />
-            <img src={activeImage} alt="" class="absolute" />
+            <img src={TracksContainer} alt="" class="w-full" />
+            <img src={activeImage} alt="" class="absolute w-[55%]" />
           </div>
         </div>
-        <div class="col-span-12 sm:col-span-3 flex items-end p-10">
+        <div
+          class="col-span-12 sm:col-span-3 flex items-end p-10 whitespace-nowrap"
+        >
           <ul class="w-full flex flex-col gap-6">
             <li class="flex items-center justify-between">
               <div class="font-instrument flex gap-4 items-center">
