@@ -13,8 +13,7 @@
       </h2>
     </div>
     <div
-      class=" sm:max-w-[34vw] max-w-auto mx-8 sm:mx-auto mb-28
-    "
+      class=" sm:max-w-[34vw] max-w-auto mx-8 sm:mx-auto mb-28 relative z-10"
     >
       <p class="text-center text-dark2 text-sm leading-relaxed">
         The Solana Renaissance Hackathon is a competition where projects will be
@@ -44,45 +43,43 @@
         in violation of the Commodities and Exchange Act.
       </p>
     </div>
-    <div class="flex justify-center pb-20 relative">
-      <ul
-        class="flex items-center left-0 right-0 justify-between md:justify-center font-medium z-10 absolute"
-      >
-        <li>
+    <div class="max-w-2xl mx-auto pb-20 relative z-10">
+      <ul class="grid grid-cols-5 font-medium">
+        <li class="py-2 flex justify-center items-center">
           <a
-            class="py-2 md:w-[112px] inline-block text-sm md:text-base hover:opacity-75 duration-300"
+            class="inline-block text-sm md:text-base hover:opacity-75 duration-300"
             href="#"
           >
             Resources
           </a>
         </li>
-        <li>
+        <li class="py-2 flex justify-center items-center">
           <a
-            class="py-2 md:w-[112px] inline-block text-sm md:text-base hover:opacity-75 duration-300"
+            class="inline-block text-sm md:text-base hover:opacity-75 duration-300"
             href="#"
           >
             FAQs
           </a>
         </li>
-        <li>
+        <li class="py-2 flex justify-center items-center">
           <a
-            class="py-2 md:w-[112px] inline-block text-sm md:text-base hover:opacity-75 duration-300"
+            class="inline-block text-sm md:text-base hover:opacity-75 duration-300"
             href="#"
           >
-            <img src={Logo} alt="" class="w-4 md:w-auto" />
+            <img src={Logo} alt="" class="w-8 md:w-auto shrink-0" />
           </a>
         </li>
-        <li>
+        <li class="py-2 flex justify-center items-center">
           <a
-            class="py-2 md:w-[112px] inline-block text-sm md:text-base hover:opacity-75 duration-300"
+            class="inline-block text-sm md:text-base hover:opacity-75 duration-300"
             href="#"
           >
             Accelerator
           </a>
         </li>
-        <li>
+        <li class="py-2 flex justify-center items-center">
           <a
-            class="py-2 md:w-[112px] inline-block text-sm md:text-base hover:opacity-75 duration-300"
+            class="inline-block text-sm md:text-base hover:opacity-75 duration-300"
             href="#"
           >
             Register

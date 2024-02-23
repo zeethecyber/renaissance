@@ -12,8 +12,16 @@
       <div
         class="flex items-center border m-[2px] bg-white font-medium gap-1 relative"
       >
-        <a href="#" class="py-3 w-[134px] text-center">Resources</a>
-        <a href="#" class="py-3 w-[134px] text-center mr-20">Accelerator</a>
+        <a
+          href="#"
+          class="py-3 w-[134px] hover:bg-[#D9D9D9] duration-300 text-center"
+          >Resources</a
+        >
+        <a
+          href="#"
+          class="py-3 w-[134px] hover:bg-[#D9D9D9] duration-300 text-center mr-20"
+          >Accelerator</a
+        >
         <div
           class="border bg-white flex h-20 w-20 absolute left-1/2 -translate-x-1/2"
         >
@@ -21,7 +29,11 @@
             <img src={Logo} alt="" srcset="" />
           </div>
         </div>
-        <a href="#" class="py-3 w-[134px] text-center">FAQs</a>
+        <a
+          href="#"
+          class="py-3 w-[134px] hover:bg-[#D9D9D9] duration-300 text-center"
+          >FAQs</a
+        >
         <a
           href="#"
           class="py-3 w-[134px] text-center bg-primary italic font-normal hover:bg-dark1 hover:text-white duration-500"

@@ -4,10 +4,11 @@
   import PrizesClouds from "$lib/images/prizes-clouds.png";
   import PrizesCenter from "$lib/images/prizes-center.png";
   import PrizeQuadrant from "$lib/images/prizes-quadrant.png";
+  import PrizeTooltip from "../ui/prize-tooltip.svelte";
 </script>
 
 <section
-  class="py-40 md:pb-40 md:pt-96 relative bg-cover sm:mt-0"
+  class="py-40 md:pb-40 md:pt-96 relative bg-cover sm:mt-0 overflow-x-hidden"
   style="background: linear-gradient(180deg, #FEFCF9 0%, rgba(254, 252, 249, 0.00) 51%, #FEFCF9 100%), url({PrizesClouds}), lightgray 50% / cover no-repeat; "
 >
   <div class="container-custom mx-auto">
@@ -27,11 +28,16 @@
             <img src={PrizeQuadrant} alt="" class="rotate-90" />
             <div class="absolute">
               <p class="font-instrument mb-4 italic font-semibold">USDC-SPL</p>
-              <h3
-                class="text-7xl 2xl:text-8xl text-white font-semibold bg-dark1"
-              >
-                $50K
-              </h3>
+              <div class="relative group cursor-pointer">
+                <h3
+                  class="text-7xl 2xl:text-8xl text-white font-semibold bg-dark1"
+                >
+                  $50K
+                </h3>
+                <PrizeTooltip
+                  className="opacity-0 group-hover:opacity-100 duration-300"
+                />
+              </div>
               <p
                 class="font-instrument bg-primary italic text-2xl 2xl:text-3xl w-min whitespace-nowrap"
               >
@@ -47,11 +53,16 @@
             <img src={PrizeQuadrant} alt="" />
             <div class="absolute">
               <p class="font-instrument mb-4 italic font-semibold">USDC-SPL</p>
-              <h3
-                class="text-7xl 2xl:text-8xl text-white font-semibold bg-dark1"
-              >
-                $10K
-              </h3>
+              <div class="relative group cursor-pointer">
+                <h3
+                  class="text-7xl 2xl:text-8xl text-white font-semibold bg-dark1"
+                >
+                  $10K
+                </h3>
+                <PrizeTooltip
+                  className="opacity-0 group-hover:opacity-100 duration-300 z-20"
+                />
+              </div>
               <p
                 class="font-instrument bg-primary italic text-2xl 2xl:text-3xl w-min whitespace-nowrap"
               >
@@ -68,11 +79,16 @@
             <img src={PrizeQuadrant} alt="" class="rotate-180" />
             <div class="absolute">
               <p class="font-instrument mb-4 italic font-semibold">USDC-SPL</p>
-              <h3
-                class="text-7xl 2xl:text-8xl text-white font-semibold bg-dark1"
-              >
-                $5K
-              </h3>
+              <div class="relative group cursor-pointer">
+                <h3
+                  class="text-7xl 2xl:text-8xl text-white font-semibold bg-dark1"
+                >
+                  $5K
+                </h3>
+                <PrizeTooltip
+                  className="opacity-0 group-hover:opacity-100 duration-300 z-20 left-[50%]"
+                />
+              </div>
               <p
                 class="font-instrument bg-primary italic text-2xl 2xl:text-3xl w-min whitespace-nowrap"
               >
@@ -88,11 +104,16 @@
             <img src={PrizeQuadrant} alt="" class="-rotate-90" />
             <div class="absolute">
               <p class="font-instrument mb-4 italic font-semibold">USDC-SPL</p>
-              <h3
-                class="text-7xl 2xl:text-8xl text-white font-semibold bg-dark1"
-              >
-                $10K
-              </h3>
+              <div class="relative group cursor-pointer">
+                <h3
+                  class="text-7xl 2xl:text-8xl text-white font-semibold bg-dark1"
+                >
+                  $10K
+                </h3>
+                <PrizeTooltip
+                  className="opacity-0 group-hover:opacity-100 duration-300 z-20"
+                />
+              </div>
               <p
                 class="font-instrument bg-primary italic text-2xl 2xl:text-3xl w-min whitespace-nowrap"
               >

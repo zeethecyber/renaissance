@@ -87,13 +87,13 @@
           </div>
         </div>
         <div class="col-span-12 sm:col-span-6 flex justify-center items-center">
-          <div class="relative flex items-center justify-center">
+          <div class="relative flex items-center justify-center w-[90%]">
             <img src={TracksContainer} alt="" class="w-full" />
             <img src={activeImage} alt="" class="absolute w-[55%]" />
           </div>
         </div>
         <div
-          class="col-span-12 sm:col-span-3 flex items-end p-10 whitespace-nowrap"
+          class="col-span-12 sm:col-span-3 flex items-end py-10 pr-10 whitespace-nowrap"
         >
           <ul class="w-full flex flex-col gap-6">
             <li class="flex items-center justify-between">

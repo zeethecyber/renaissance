@@ -20,6 +20,8 @@
   import { onMount } from "svelte";
   import TracksSmall from "../components/home/tracks-small.svelte";
   import Modal from "../components/ui/modal.svelte";
+  import SolanaFoundation from "../components/icons/solana-foundation.svelte";
+  import Colosseum from "../components/icons/colosseum.svelte";
 
   const TAB_WIDTH = 768;
 
@@ -47,7 +49,7 @@
   >
     <div class="relative z-10">
       <Header />
-      <section class="pb-[600px]">
+      <section>
         <div class="container-custom mx-auto mt-4">
           <img
             src={windowWidth < TAB_WIDTH ? HeroTitleSmall : HeroTitle}
@@ -141,8 +143,20 @@
         </div>
       </section>
       <section
-        class="mt-24 overflow-hidden flex justify-center relative z-10 mt-[-23%]"
+        class="mt-24 overflow-x-hidden flex justify-center relative z-10 pt-24 md:pt-0"
       >
+        <div class="absolute left-0 right-0 top-0 sm:hidden">
+          <div class="px-8 flex justify-between items-center">
+            <div>
+              <p class="mb-4">Hosted By</p>
+              <SolanaFoundation className="w-32" />
+            </div>
+            <div>
+              <p class="mb-4">Powered By</p>
+              <Colosseum className="w-32" />
+            </div>
+          </div>
+        </div>
         <img
           src={HeroElements}
           alt=""
@@ -169,8 +183,8 @@
   {/if}
   <Judges />
   <div
-    class="bg-bottom"
-    style="background: linear-gradient(180deg, #FDF9F5 0%, rgba(254, 252, 249, 0.00) 100%), linear-gradient(0deg, rgba(198, 177, 149, 0.20) 0%, rgba(198, 177, 149, 0.20) 100%), url({FooterClouds}), lightgray 50% / cover no-repeat;"
+    class="bg-cover bg-bottom"
+    style="background-image: url({FooterClouds});"
   >
     <div>
       <marquee behavior="" direction="left">
@@ -212,15 +226,17 @@
 </div>
 
 <Modal bind:showModal>
-  <iframe
-    width="560"
-    height="315"
-    src="https://www.youtube.com/embed/HXcJM0mOp40?si=b6kENEYxfnBpc_ZR"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen
-  ></iframe>
+  <div class="aspect-video md:min-w-[700px]">
+    <iframe
+      width="100%"
+      height="100%"
+      src="https://www.youtube.com/embed/HXcJM0mOp40?si=b6kENEYxfnBpc_ZR"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen
+    ></iframe>
+  </div>
 </Modal>
 
 <style></style>
