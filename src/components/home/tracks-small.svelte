@@ -10,6 +10,7 @@
   import ConsumerTrack from "$lib/images/consumer-track.png";
   import InfrastructureTrack from "$lib/images/infrastructure-track.png";
   import Accordion from "../ui/accordion.svelte";
+  import Title from "../ui/title.svelte";
 
   let activeImage = DePinTrack;
 
@@ -56,11 +57,9 @@
   <div class="container-custom mx-auto">
     <div class="relative">
       <div class="flex gap-10 relative z-10">
-        <h2
-          class="text-6xl lg:text-8xl 2xl:text-heading-large italic text-center bg-primary relative leading-none font-instrument"
-        >
-          Tracks
-        </h2>
+        <Title>
+          <span class="bg-primary">Tracks</span>
+        </Title>
       </div>
       {#each items as item, i}
         <Accordion index={i} {item} {show} {showCollapse}>

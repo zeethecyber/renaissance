@@ -23,8 +23,8 @@
       </svg>
     </div>
     <div class="p-2 py-4 text-lg">
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque velit
-      explicabo eaque eveniet amet expedita doloribus fugit earum veniam totam?
+      Plus 3 passes to the next upcoming Solana Breakpoint 2024 conference,
+      where you may present your project to the Solana community.
     </div>
   </div>
 </div>

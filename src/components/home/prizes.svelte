@@ -5,6 +5,7 @@
   import PrizesCenter from "$lib/images/prizes-center.png";
   import PrizeQuadrant from "$lib/images/prizes-quadrant.png";
   import PrizeTooltip from "../ui/prize-tooltip.svelte";
+  import Title from "../ui/title.svelte";
 </script>
 
 <section
@@ -14,11 +15,9 @@
   <div class="container-custom mx-auto">
     <div class="relative hidden sm:block">
       <div class="absolute top-0 left-0 w-full">
-        <h2
-          class="text-6xl lg:text-8xl 2xl:text-heading-large italic relative leading-none font-instrument"
-        >
+        <Title>
           <span class="bg-primary">Prizes</span>
-        </h2>
+        </Title>
       </div>
       <div class="grid grid-cols-3">
         <!-- Row 1 -->
@@ -27,10 +26,12 @@
           <div class="relative flex items-center justify-center">
             <img src={PrizeQuadrant} alt="" class="rotate-90" />
             <div class="absolute">
-              <p class="font-instrument mb-4 italic font-semibold">USDC-SPL</p>
+              <p class="font-victor mb-4 italic font-semibold text-dark2">
+                USDC
+              </p>
               <div class="relative group cursor-pointer">
                 <h3
-                  class="text-7xl 2xl:text-8xl text-white font-semibold bg-dark1"
+                  class="text-7xl 2xl:text-8xl text-white font-semibold bg-dark2 font-inter"
                 >
                   $50K
                 </h3>
@@ -39,7 +40,7 @@
                 />
               </div>
               <p
-                class="font-instrument bg-primary italic text-2xl 2xl:text-3xl w-min whitespace-nowrap"
+                class="font-victor bg-primary text-dark2 italic text-2xl 2xl:text-3xl w-min whitespace-nowrap"
               >
                 Grand Champion
               </p>
@@ -52,10 +53,12 @@
           <div class="relative flex items-center justify-center">
             <img src={PrizeQuadrant} alt="" />
             <div class="absolute">
-              <p class="font-instrument mb-4 italic font-semibold">USDC-SPL</p>
+              <p class="font-victor mb-4 italic font-semibold text-dark2">
+                USDC
+              </p>
               <div class="relative group cursor-pointer">
                 <h3
-                  class="text-7xl 2xl:text-8xl text-white font-semibold bg-dark1"
+                  class="text-7xl 2xl:text-8xl text-white font-semibold bg-dark2 font-inter"
                 >
                   $10K
                 </h3>
@@ -64,7 +67,7 @@
                 />
               </div>
               <p
-                class="font-instrument bg-primary italic text-2xl 2xl:text-3xl w-min whitespace-nowrap"
+                class="font-victor bg-primary text-dark2 italic text-2xl 2xl:text-3xl w-min whitespace-nowrap"
               >
                 Public Goods Award
               </p>
@@ -78,10 +81,12 @@
           <div class="relative flex items-center justify-center">
             <img src={PrizeQuadrant} alt="" class="rotate-180" />
             <div class="absolute">
-              <p class="font-instrument mb-4 italic font-semibold">USDC-SPL</p>
+              <p class="font-victor mb-4 italic font-semibold text-dark2">
+                USDC
+              </p>
               <div class="relative group cursor-pointer">
                 <h3
-                  class="text-7xl 2xl:text-8xl text-white font-semibold bg-dark1"
+                  class="text-7xl 2xl:text-8xl text-white font-semibold bg-dark2 font-inter"
                 >
                   $5K
                 </h3>
@@ -90,7 +95,7 @@
                 />
               </div>
               <p
-                class="font-instrument bg-primary italic text-2xl 2xl:text-3xl w-min whitespace-nowrap"
+                class="font-victor bg-primary text-dark2 italic text-2xl 2xl:text-3xl w-min whitespace-nowrap"
               >
                 Climate Award
               </p>
@@ -103,10 +108,12 @@
           <div class="relative flex items-center justify-center">
             <img src={PrizeQuadrant} alt="" class="-rotate-90" />
             <div class="absolute">
-              <p class="font-instrument mb-4 italic font-semibold">USDC-SPL</p>
+              <p class="font-victor mb-4 italic font-semibold text-dark2">
+                USDC
+              </p>
               <div class="relative group cursor-pointer">
                 <h3
-                  class="text-7xl 2xl:text-8xl text-white font-semibold bg-dark1"
+                  class="text-7xl 2xl:text-8xl text-white font-semibold bg-dark2 font-inter"
                 >
                   $10K
                 </h3>
@@ -115,7 +122,7 @@
                 />
               </div>
               <p
-                class="font-instrument bg-primary italic text-2xl 2xl:text-3xl w-min whitespace-nowrap"
+                class="font-victor bg-primary text-dark2 italic text-2xl 2xl:text-3xl w-min whitespace-nowrap"
               >
                 University Award
               </p>
@@ -129,7 +136,7 @@
     <!-- this div is for small screens -->
     <div class="block sm:hidden">
       <div class="">
-        <h2 class="text-7xl italic relative leading-none font-instrument">
+        <h2 class="text-7xl italic relative leading-none font-victor">
           <span class="bg-primary">Prizes</span>
         </h2>
       </div>
@@ -141,10 +148,14 @@
           <div class="relative flex items-center justify-center">
             <img src={PrizeQuadrant} alt="" class="rotate-90" />
             <div class="absolute">
-              <p class="font-instrument mb-4 italic font-semibold">USDC-SPL</p>
-              <h3 class="text-7xl text-white font-semibold bg-dark1">$50K</h3>
+              <p class="font-victor mb-4 italic font-semibold text-dark2">
+                USDC
+              </p>
+              <h3 class="text-7xl text-white font-semibold bg-dark2 font-inter">
+                $50K
+              </h3>
               <p
-                class="font-instrument bg-primary italic text-2xl w-min whitespace-nowrap"
+                class="font-victor bg-primary text-dark2 italic text-2xl w-min whitespace-nowrap"
               >
                 Grand Champion
               </p>
@@ -153,10 +164,14 @@
           <div class="relative flex items-center justify-center">
             <img src={PrizeQuadrant} alt="" class="rotate-90" />
             <div class="absolute">
-              <p class="font-instrument mb-4 italic font-semibold">USDC-SPL</p>
-              <h3 class="text-7xl text-white font-semibold bg-dark1">$10K</h3>
+              <p class="font-victor mb-4 italic font-semibold text-dark2">
+                USDC
+              </p>
+              <h3 class="text-7xl text-white font-semibold bg-dark2 font-inter">
+                $10K
+              </h3>
               <p
-                class="font-instrument bg-primary italic text-2xl w-min whitespace-nowrap"
+                class="font-victor bg-primary text-dark2 italic text-2xl w-min whitespace-nowrap"
               >
                 Public Goods Award
               </p>
@@ -165,10 +180,14 @@
           <div class="relative flex items-center justify-center">
             <img src={PrizeQuadrant} alt="" class="rotate-90" />
             <div class="absolute">
-              <p class="font-instrument mb-4 italic font-semibold">USDC-SPL</p>
-              <h3 class="text-7xl text-white font-semibold bg-dark1">$5K</h3>
+              <p class="font-victor mb-4 italic font-semibold text-dark2">
+                USDC
+              </p>
+              <h3 class="text-7xl text-white font-semibold bg-dark2 font-inter">
+                $5K
+              </h3>
               <p
-                class="font-instrument bg-primary italic text-2xl w-min whitespace-nowrap"
+                class="font-victor bg-primary text-dark2 italic text-2xl w-min whitespace-nowrap"
               >
                 Climate Award
               </p>
@@ -177,10 +196,14 @@
           <div class="relative flex items-center justify-center">
             <img src={PrizeQuadrant} alt="" class="rotate-90" />
             <div class="absolute">
-              <p class="font-instrument mb-4 italic font-semibold">USDC-SPL</p>
-              <h3 class="text-7xl text-white font-semibold bg-dark1">$10K</h3>
+              <p class="font-victor mb-4 italic font-semibold text-dark2">
+                USDC
+              </p>
+              <h3 class="text-7xl text-white font-semibold bg-dark2 font-inter">
+                $10K
+              </h3>
               <p
-                class="font-instrument bg-primary italic text-2xl w-min whitespace-nowrap"
+                class="font-victor bg-primary text-dark2 italic text-2xl w-min whitespace-nowrap"
               >
                 University Award
               </p>

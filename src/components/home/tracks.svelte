@@ -12,6 +12,7 @@
   import GamingTrack from "$lib/images/gaming-track.png";
   import ConsumerTrack from "$lib/images/consumer-track.png";
   import InfrastructureTrack from "$lib/images/infrastructure-track.png";
+  import Title from "../ui/title.svelte";
 
   const trackTabs = [
     "DePin",
@@ -57,11 +58,9 @@
   <div class="container-custom mx-auto">
     <div class="relative">
       <div class="flex mb-20 gap-10 relative z-10">
-        <h2
-          class="text-6xl lg:text-8xl 2xl:text-heading-large italic text-center bg-primary relative leading-none font-instrument"
-        >
-          Tracks
-        </h2>
+        <Title>
+          <span class="bg-primary">Tracks</span>
+        </Title>
         <div class="flex gap-6 flex-wrap max-w-3xl">
           {#each trackTabs as tab}
             <button on:click={() => changeActiveTab(tab)}>
@@ -97,7 +96,7 @@
         >
           <ul class="w-full flex flex-col gap-6">
             <li class="flex items-center justify-between">
-              <div class="font-instrument flex gap-4 items-center">
+              <div class="font-victor flex gap-4 items-center">
                 <span
                   class="rounded-full text-dark1 bg-primary flex items-center justify-center w-[40px] h-[32px] italic"
                   >I</span
@@ -107,7 +106,7 @@
               <div class="font-semibold text-2xl">$30,000</div>
             </li>
             <li class="flex items-center justify-between">
-              <div class="font-instrument flex gap-4 items-center">
+              <div class="font-victor flex gap-4 items-center">
                 <span
                   class="rounded-full text-dark1 bg-primary flex items-center justify-center w-[40px] h-[32px] italic"
                   >II</span
@@ -117,7 +116,7 @@
               <div class="font-semibold text-2xl">$20,000</div>
             </li>
             <li class="flex items-center justify-between">
-              <div class="font-instrument flex gap-4 items-center">
+              <div class="font-victor flex gap-4 items-center">
                 <span
                   class="rounded-full text-dark1 bg-primary flex items-center justify-center w-[40px] h-[32px] italic"
                   >III</span
@@ -127,7 +126,7 @@
               <div class="font-semibold text-2xl">$15,000</div>
             </li>
             <li class="flex items-center justify-between">
-              <div class="font-instrument flex gap-4 items-center">
+              <div class="font-victor flex gap-4 items-center">
                 <span
                   class="rounded-full text-dark1 bg-primary flex items-center justify-center w-[40px] h-[32px] italic"
                   >IV</span
@@ -137,7 +136,7 @@
               <div class="font-semibold text-2xl">$10,000</div>
             </li>
             <li class="flex items-center justify-between">
-              <div class="font-instrument flex gap-4 items-center">
+              <div class="font-victor flex gap-4 items-center">
                 <span
                   class="rounded-full text-dark1 bg-primary flex items-center justify-center w-[40px] h-[32px] italic"
                   >V</span

@@ -1,10 +1,11 @@
 <script lang="ts">
-  // Components
   //   Images
-  import PreSeed from "$lib/images/pre-seed.png";
-  import Network from "$lib/images/network.png";
-  import Mentorship from "$lib/images/mentorship.png";
+  import PreSeed from "$lib/images/prize-img-1.png";
+  import Network from "$lib/svg/prize-img-2.svg";
+  import Mentorship from "$lib/svg/prize-img-3.svg";
   import BgCloud from "$lib/images/bg-cloud-single.png";
+  import Title from "../ui/title.svelte";
+  import AcceleratorCard from "../ui/accelerator-card.svelte";
 </script>
 
 <section class="pt-40 relative">
@@ -18,13 +19,11 @@
             Now introducing
           </p>
         </div>
-        <h2
-          class="text-6xl lg:text-8xl 2xl:text-heading-large italic relative leading-none font-instrument"
-        >
-          <span class="bg-primary">Colosseum's</span><br /><span
-            class="bg-primary">Accelerator</span
+        <Title>
+          <span class="bg-primary inline-block">Colosseum's</span><br /><span
+            class="bg-primary inline-block">Accelerator</span
           >
-        </h2>
+        </Title>
       </div>
       <div class="flex items-end">
         <p class="font-medium text-[20px] md:text-2xl text-dark2 mt-12">
@@ -36,58 +35,30 @@
     <div
       class="grid justify-center xl:justify-start xl:grid-cols-3 xl:h-[1000px] mt-28 gap-x-20 gap-y-28"
     >
-      <div class="flex flex-col md:items-center xl:items-start">
-        <div class="relative">
-          <img src={PreSeed} alt="" />
-          <div
-            class="w-[34px] h-[50px] text-[20px] text-white italic font-instrument bg-dark1 rounded-full absolute top-0 left-0 flex items-center justify-center"
-          >
-            1
-          </div>
-        </div>
-        <h3 class="text-4xl md:text-7xl font-semibold mt-10">$250,000</h3>
-        <h5
-          class="text-xl md:text-2xl font-medium mt-2 text-dark2 xl:text-left"
-        >
-          in pre-seed funding
-        </h5>
+      <div class="flex items-start">
+        <AcceleratorCard
+          number={1}
+          image={PreSeed}
+          title="$250,000"
+          subtitle="in pre-seed funding"
+        />
       </div>
 
       <div class="flex items-center">
-        <div class="flex flex-col md:items-center xl:items-start">
-          <div class="relative">
-            <img src={Network} alt="" />
-            <div
-              class="w-[34px] h-[50px] text-[20px] text-white italic font-instrument bg-dark1 rounded-full absolute top-0 left-0 flex items-center justify-center"
-            >
-              2
-            </div>
-          </div>
-          <h3 class="text-4xl md:text-7xl font-semibold mt-10">Network</h3>
-          <h5
-            class="text-xl md:text-2xl font-medium mt-2 text-dark2 xl:text-left"
-          >
-            Exclusive access to an elite founder network
-          </h5>
-        </div>
+        <AcceleratorCard
+          number={2}
+          image={Network}
+          title="Network"
+          subtitle="Exclusive access to an elite founder network"
+        />
       </div>
       <div class="flex items-end">
-        <div class="flex flex-col md:items-center xl:items-start">
-          <div class="relative">
-            <img src={Mentorship} alt="" />
-            <div
-              class="w-[34px] h-[50px] text-[20px] text-white italic font-instrument bg-dark1 rounded-full absolute top-0 left-0 flex items-center justify-center"
-            >
-              3
-            </div>
-          </div>
-          <h3 class="text-4xl md:text-7xl font-semibold mt-10">Mentorship</h3>
-          <h5
-            class="text-xl md:text-2xl font-medium mt-2 text-dark2 xl:text-left"
-          >
-            Direct ecosystem connections and 1:1 mentorship.
-          </h5>
-        </div>
+        <AcceleratorCard
+          number={3}
+          image={Mentorship}
+          title="Mentorship"
+          subtitle="Direct ecosystem connections and 1:1 mentorship."
+        />
       </div>
     </div>
   </div>

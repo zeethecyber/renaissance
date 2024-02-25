@@ -7,13 +7,13 @@
   <div class="container-custom mx-auto">
     <div class="flex justify-center mb-10">
       <h2
-        class="text-center md:text-left text-2xl italic font-medium bg-primary font-instrument"
+        class="text-center md:text-left text-2xl italic font-medium bg-primary font-victor"
       >
         Solana Foundation Hackathon Official Rules
       </h2>
     </div>
     <div
-      class=" sm:max-w-[34vw] max-w-auto mx-8 sm:mx-auto mb-28 relative z-10"
+      class="w-[34vw] sm:max-w-screen-md mx-8 sm:mx-auto mb-28 relative z-10"
     >
       <p class="text-center text-dark2 text-sm leading-relaxed">
         The Solana Renaissance Hackathon is a competition where projects will be
@@ -48,7 +48,7 @@
         <li class="py-2 flex justify-center items-center">
           <a
             class="inline-block text-sm md:text-base hover:opacity-75 duration-300"
-            href="#"
+            href="/"
           >
             Resources
           </a>
@@ -56,7 +56,7 @@
         <li class="py-2 flex justify-center items-center">
           <a
             class="inline-block text-sm md:text-base hover:opacity-75 duration-300"
-            href="#"
+            href="/"
           >
             FAQs
           </a>
@@ -64,7 +64,7 @@
         <li class="py-2 flex justify-center items-center">
           <a
             class="inline-block text-sm md:text-base hover:opacity-75 duration-300"
-            href="#"
+            href="/"
           >
             <img src={Logo} alt="" class="w-8 md:w-auto shrink-0" />
           </a>
@@ -72,7 +72,7 @@
         <li class="py-2 flex justify-center items-center">
           <a
             class="inline-block text-sm md:text-base hover:opacity-75 duration-300"
-            href="#"
+            href="/"
           >
             Accelerator
           </a>
@@ -80,7 +80,7 @@
         <li class="py-2 flex justify-center items-center">
           <a
             class="inline-block text-sm md:text-base hover:opacity-75 duration-300"
-            href="#"
+            href="/"
           >
             Register
           </a>
@@ -88,7 +88,7 @@
       </ul>
     </div>
   </div>
-  <div class="absolute bottom-0 hidden sm:block">
+  <div class="absolute bottom-0 hidden sm:block left-0 right-0">
     <img src={FooterBg} alt="" class="w-full" />
   </div>
 </footer>

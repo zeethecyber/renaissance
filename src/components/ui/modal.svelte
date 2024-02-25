@@ -9,26 +9,39 @@
 <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-noninteractive-element-interactions -->
 <dialog
   bind:this={dialog}
+  class="shadow"
   on:close={() => (showModal = false)}
   on:click|self={() => dialog.close()}
 >
   <!-- svelte-ignore a11y-no-static-element-interactions -->
   <div on:click|stopPropagation>
     <slot name="header" />
-    <hr />
-    <slot />
-    <hr />
-    <div class="mt-8 flex justify-center">
-      <!-- svelte-ignore a11y-autofocus -->
-      <button autofocus on:click={() => dialog.close()}>close modal</button>
+    <div class="mb-8 flex justify-between items-center">
+      <h2 class="font-bold text-xl">Solana Hackathon</h2>
+      <button on:click={() => dialog.close()}
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18 18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
     </div>
+    <slot />
   </div>
 </dialog>
 
 <style>
   dialog {
     max-width: 1300px;
-    /* min-width: 800px; */
     border: none;
     padding: 0;
   }

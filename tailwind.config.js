@@ -9,10 +9,11 @@ export default {
         dark2: "#312923",
       },
       fontSize: {
-        "heading-large": "135px",
+        "heading-large": "130px",
       },
       fontFamily: {
         inter: ["Inter Tight", "sans-serif"],
+        display: ["Inter Display", "sans-serif"],
         instrument: ["Instrument Serif", "sans-serif"],
         victor: ["Victor Serif", "sans-serif"],
       },

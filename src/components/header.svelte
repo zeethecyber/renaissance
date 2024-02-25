@@ -13,30 +13,32 @@
         class="flex items-center border m-[2px] bg-white font-medium gap-1 relative"
       >
         <a
-          href="#"
+          href="/"
           class="py-3 w-[134px] hover:bg-[#D9D9D9] duration-300 text-center"
           >Resources</a
         >
         <a
-          href="#"
+          href="/"
           class="py-3 w-[134px] hover:bg-[#D9D9D9] duration-300 text-center mr-20"
           >Accelerator</a
         >
         <div
           class="border bg-white flex h-20 w-20 absolute left-1/2 -translate-x-1/2"
         >
-          <div class="border m-[2px] grow flex items-center justify-center">
+          <div
+            class="border m-[2px] grow flex items-center justify-center bg-[#D9D9D9]/25"
+          >
             <img src={Logo} alt="" srcset="" />
           </div>
         </div>
         <a
-          href="#"
+          href="/"
           class="py-3 w-[134px] hover:bg-[#D9D9D9] duration-300 text-center"
           >FAQs</a
         >
         <a
-          href="#"
-          class="py-3 w-[134px] text-center bg-primary italic font-normal hover:bg-dark1 hover:text-white duration-500"
+          href="/"
+          class="py-3 w-[134px] text-center bg-primary font-victor hover:bg-dark1 hover:text-white duration-500"
           >Register Now</a
         >
       </div>
@@ -79,7 +81,7 @@
           </div>
         </div>
         <a
-          href="#"
+          href="/"
           class="py-3 w-[110px] text-center bg-primary italic font-normal font-instrument"
           >Register</a
         >
@@ -93,9 +95,9 @@
         style="top: calc(100% + 8px)"
       >
         <div class="border m-[2px] bg-white font-medium flex flex-col">
-          <a href="#" class="py-3 w-full text-center">Resources</a>
-          <a href="#" class="py-3 w-full text-center">Accelerator</a>
-          <a href="#" class="py-3 w-full text-center">FAQs</a>
+          <a href="/" class="py-3 w-full text-center">Resources</a>
+          <a href="/" class="py-3 w-full text-center">Accelerator</a>
+          <a href="/" class="py-3 w-full text-center">FAQs</a>
         </div>
       </div>
     {/if}
