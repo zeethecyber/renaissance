@@ -38,7 +38,7 @@
   });
 </script>
 
-<div class="bg-[#FEFCF9]">
+<div>
   <div
     style="background-image: url({BgClouds}); background-position: center top;"
     class="bg-cover relative"
@@ -47,7 +47,7 @@
       <Header />
       <Hero />
       <section
-        class="mt-24 overflow-x-hidden flex justify-center relative z-10 pt-24 md:pt-0"
+        class="overflow-x-hidden flex justify-center relative z-10 pt-24 md:pt-0 md:mt-24"
       >
         <div class="absolute left-0 right-0 top-0 sm:hidden">
           <div class="px-8 flex justify-between items-center">
@@ -87,7 +87,7 @@
   <Prizes />
 
   <!-- Tracks -->
-  {#if windowWidth > 1440}
+  {#if windowWidth > 1024}
     <Tracks />
   {:else}
     <TracksSmall />
@@ -107,7 +107,7 @@
 </div>
 
 <Modal bind:showModal>
-  <div class="aspect-video md:min-w-[800px]">
+  <div class="aspect-video w-full">
     <iframe
       width="100%"
       height="100%"

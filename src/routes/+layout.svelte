@@ -5,9 +5,6 @@
   let windowWidth = 0;
 
   onMount(() => {
-    // window.addEventListener("load", () => {
-    //   windowWidth = window.innerWidth;
-    // });
     window.addEventListener("resize", () => {
       windowWidth = window.innerWidth;
     });
@@ -16,9 +13,6 @@
       window.removeEventListener("resize", () => {
         windowWidth = window.innerWidth;
       });
-      // window.removeEventListener("load", () => {
-      //   windowWidth = window.innerWidth;
-      // });
     };
   });
 </script>

@@ -5,7 +5,7 @@
 
 <div class="border border bg-[#F6F6F6] p-[2px]">
   <div
-    class={"border flex items-center gap-2 text-[20px] justify-center py-[14px] px-[24px] whitespace-nowrap font-medium duration-300" +
+    class={"border flex items-center gap-2 text-lg 2xl:text-[20px] justify-center py-[14px] px-[24px] whitespace-nowrap font-medium duration-300" +
       (active
         ? " bg-dark1 text-white"
         : " bg-white hover:bg-dark1 hover:text-white")}

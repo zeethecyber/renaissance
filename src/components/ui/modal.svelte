@@ -41,12 +41,14 @@
 
 <style>
   dialog {
-    max-width: 1300px;
+    max-width: 800px;
+    width: 100%;
     border: none;
     padding: 0;
   }
   dialog::backdrop {
     background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
   }
   dialog > div {
     padding: 30px;
